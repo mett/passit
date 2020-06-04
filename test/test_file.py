@@ -3,6 +3,7 @@ from unittest import TestCase
 from halp import passit
 
 
+@passit
 def test_that_passes():
     """This will always pass."""
     assert True
@@ -13,7 +14,6 @@ def test_that_fails():
     """This will always fail."""
     assert False
 
-
 @passit
 def test_dbz():
     """This will attempt to end the universe.
@@ -22,7 +22,6 @@ def test_dbz():
     carries a lot of destruction power for something pointless.
     """
     1 / 0
-
 
 @passit
 def test_fail():
